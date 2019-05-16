@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from ..models import Detail
+from users.models import Detail
 
 class DetailSerializer(serializers.ModelSerializer):
     class Meta:
