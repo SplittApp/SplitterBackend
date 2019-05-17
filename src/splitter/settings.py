@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'phone_field',
     'localflavor',
-    'users'
+    'users',
+    'groups'
 ]
 
 MIDDLEWARE = [
