@@ -27,5 +27,6 @@ urlpatterns = [
     # the following are all of the urls for the group models
     path('api/member/user/', include('groups.api.urls.MemberUserUrls')),
     path('api/member/group/', include('groups.api.urls.MemberGroupUrls')),
+    path('api/members/', include('groups.api.urls.MembersUrls')),
     path('api/groups/', include('groups.api.urls.GroupsUrls')),
 ]
