@@ -22,6 +22,10 @@ urlpatterns = [
     # the following are all of the urls for the user models
     path('api/user/profile/', include('users.api.urls.ProfileUrls')),
     path('api/user/detail/', include('users.api.urls.DetailUrls')),
-    path('api/user/friend/', include('users.api.urls.FriendUrls')),
+    path('api/user/friends/', include('users.api.urls.FriendUrls')),
     path('api/users/', include('users.api.urls.UserUrls')),
+    # the following are all of the urls for the group models
+    path('api/member/user/', include('groups.api.urls.MemberUserUrls')),
+    path('api/member/group/', include('groups.api.urls.MemberGroupUrls')),
+    path('api/groups/', include('groups.api.urls.GroupsUrls')),
 ]
