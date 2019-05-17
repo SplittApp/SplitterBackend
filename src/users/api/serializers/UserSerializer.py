@@ -14,4 +14,11 @@ class UserSerializer(serializers.ModelSerializer):
             'groups',
             'password'
         )
-        depth=2
+
+
+    def to_representation(self, instance):
+        self.Meta.depth = 1
+        representation = super().to_representation(instance)
+        self.Meta.depth = 0
+
+        return representation
